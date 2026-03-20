@@ -24,5 +24,5 @@ jobs: #pipeline
       - name: run plan
         run: terraform plan    
 
-      - name: Apply
-        run: terraform apply -auto-approve  
+      - name: Apply 
+        run: terraform apply -auto-approve 
