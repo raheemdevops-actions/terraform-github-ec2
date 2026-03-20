@@ -13,4 +13,7 @@ jobs: #pipeline
 
       - name: run init
         run: terraform init
-     
+
+
+      - name: run plan
+        run: terrraform plan     
