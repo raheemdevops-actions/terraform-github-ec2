@@ -1,0 +1,16 @@
+name: Conditions
+on: [push]
+
+jobs: #pipeline
+  terraform: #pipeline1
+    runs-on: ubuntu-latest
+    steps: #stages
+      - name: checkout
+        uses : actions/checkout@v5
+
+      - name: setup terraform
+        uses: hashicorp/setup-terraform@v3.1.2 
+
+      - name: run init
+        run: terraform init
+     
