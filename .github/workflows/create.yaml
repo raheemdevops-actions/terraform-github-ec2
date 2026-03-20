@@ -1,4 +1,4 @@
-name: Conditions
+name: Terraform-ec2-apply
 on: [push]
 
 jobs: #pipeline
@@ -26,3 +26,6 @@ jobs: #pipeline
 
       - name: Apply 
         run: terraform apply -auto-approve 
+    
+      - name: Destroy 
+        run: terraform destroy -auto-approve 
