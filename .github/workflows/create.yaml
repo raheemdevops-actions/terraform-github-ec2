@@ -22,4 +22,7 @@ jobs: #pipeline
           aws-region: us-east-1
 
       - name: run plan
-        run: terraform plan     
+        run: terraform plan    
+
+      - name: Apply
+        run: terraform apply -auto-approve  
