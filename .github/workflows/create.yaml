@@ -22,4 +22,4 @@ jobs: #pipeline
           aws-region: us-east-1
 
       - name: run plan
-        run: terrraform plan     
+        run: terraform plan     
